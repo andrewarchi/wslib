@@ -458,7 +458,7 @@ s/(^| )<<( |$)/\1call int.shl\2/g
 s/(^| )>>( |$)/\1call int.shr\2/g
 s/(^| )\*\*( |$)/\1call math.exp\2/g
 s/(^| )~( |$)/\1push 1 + neg\2/g
-s/\bneg\b/push -1 */g
+s/(^| )neg( |$)/\1push -1 *\2/g
 
 # Macro for jeof, depending on desired EOF behavior (0, -1, either)
 s/\bjeof\b/push 1 - jn/g
