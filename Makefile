@@ -5,7 +5,6 @@
 # file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
 BUILD = build
-SED = gsed
 ASSEMBLE = wsc
 
 WSF = $(patsubst ./%,%,$(shell find . -name module.wsf -o -name '*_test.wsf')) crypto/caesar.wsf
